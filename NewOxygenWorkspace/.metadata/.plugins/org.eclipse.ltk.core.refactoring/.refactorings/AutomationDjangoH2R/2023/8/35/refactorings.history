@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;org.test.ReportsTest&apos; to &apos;BirthdayReportsTest&apos;&#x0D;&#x0A;- Original project: &apos;AutomationDjangoH2R&apos;&#x0D;&#x0A;- Original element: &apos;org.test.ReportsTest&apos;&#x0D;&#x0A;- Renamed element: &apos;org.test.BirthdayReportsTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;ReportsTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java&lt;org.test{ReportsTest.java[ReportsTest" matchStrategy="1" name="BirthdayReportsTest" qualified="false" references="true" similarDeclarations="false" stamp="1693375954342" textual="false" version="1.0"/>
-</session>
