@@ -1,0 +1,32 @@
+package demo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class LoginPage {
+
+	public static void main(String[] args) throws InterruptedException { 
+		// TODO Auto-generated method stub
+		
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://test.o2ohrms.com/app"); // Opening the URL
+		
+		driver.findElement(By.name("email")).sendKeys("chandan55bd@gmail.com");// Providing the Email Address
+		Thread.sleep(3000);
+		driver.findElement(By.name("password")).sendKeys("Test@123"); // Providing the Password
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//input[@type='checkbox']")).click(); // Unchecking the Remember me Checkbox
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click(); // Click on Login Button
+		Thread.sleep(9000);
+		
+		System.out.println(driver.getTitle()); // Printing the Title in console window
+        System.out.println(driver.getCurrentUrl()); // Printing the URL
+		driver.close(); // closing the Browser 
+        
+
+	}
+
+}

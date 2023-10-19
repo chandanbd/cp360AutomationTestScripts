@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.livesettings.pomclass.HolidaysList&apos; to &apos;HolidaysListPomClass&apos;&#x0D;&#x0A;- Original project: &apos;AutomationDjangoH2R&apos;&#x0D;&#x0A;- Original element: &apos;org.livesettings.pomclass.HolidaysList&apos;&#x0D;&#x0A;- Renamed element: &apos;org.livesettings.pomclass.HolidaysListPomClass&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;HolidaysList&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java&lt;org.livesettings.pomclass{HolidaysList.java[HolidaysList" matchStrategy="1" name="HolidaysListPomClass" qualified="false" references="true" similarDeclarations="false" stamp="1697451078979" textual="false" version="1.0"/>
+</session>

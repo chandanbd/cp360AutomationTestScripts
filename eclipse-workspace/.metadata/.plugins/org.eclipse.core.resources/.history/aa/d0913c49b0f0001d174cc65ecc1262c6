@@ -1,0 +1,32 @@
+package demo;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ProfilePage {
+
+	public static void main(String[] args) throws InterruptedException { 
+		// TODO Auto-generated method stub
+		
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://test.o2ohrms.com/app");  // Opening the URL
+		driver.manage().window().maximize();
+		driver.findElement(By.name("email")).sendKeys("chandan55bd@gmail.com"); // Providing the Email Address
+		driver.findElement(By.name("password")).sendKeys("Test@123"); // Providing the Password
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//button[@type='submit']")).click(); // Click on Login Button
+		Thread.sleep(9000);
+		driver.findElement(By.xpath("//div[text()='Profile']")).click(); // Click on Profile
+		Thread.sleep(9000);
+		driver.findElement(By.xpath("(//button[text()='Edit'])[1]")).click();   // Click on Personal id edit button
+		Thread.sleep(4000);
+        driver.findElement(By.xpath("//button[contains(text(),'Close')]")).click(); // Click on close button
+        Thread.sleep(4000);
+        driver.navigate().back();
+        
+		//driver.close();
+
+	}
+
+}

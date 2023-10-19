@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.livesettings.pomclass.JobType&apos; to &apos;JobTypePomClass&apos;&#x0D;&#x0A;- Original project: &apos;AutomationDjangoH2R&apos;&#x0D;&#x0A;- Original element: &apos;org.livesettings.pomclass.JobType&apos;&#x0D;&#x0A;- Renamed element: &apos;org.livesettings.pomclass.JobTypePomClass&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;JobType&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java&lt;org.livesettings.pomclass{JobType.java[JobType" matchStrategy="1" name="JobTypePomClass" qualified="false" references="true" similarDeclarations="false" stamp="1696846245402" textual="false" version="1.0"/>
+</session>

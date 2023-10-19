@@ -1,0 +1,38 @@
+package org.settingspomclass;
+
+import org.baseclass.BaseClass;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class ExperiencePomClass extends BaseClass{
+	
+	public ExperiencePomClass()
+	{
+		PageFactory.initElements(driver, this);  //create a constructor 
+
+	}
+
+
+	@FindBy(xpath="//div[text()='Settings']") 
+	private WebElement settings;
+	
+	@FindBy(xpath="//div[text()='Experience']") 
+	private WebElement experience;
+	
+	@FindBy(xpath="//a[contains(text(),'Add New Experience')]") 
+	private WebElement addnewexperience;
+	
+	@FindBy(xpath="//label[text()='Search:']/following::input") 
+	private WebElement inputexperience;
+	
+	@FindBy(xpath="//button[text()='Save']") 
+	private WebElement save;
+	
+	@FindBy(xpath="//input[@type='search']") 
+	private WebElement searchbar;
+	
+	@FindBy(xpath="//button[@title='Search']") 
+	private WebElement searchbutton;
+
+}

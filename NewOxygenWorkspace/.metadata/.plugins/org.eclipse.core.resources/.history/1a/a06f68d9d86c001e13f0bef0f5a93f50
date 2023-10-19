@@ -1,0 +1,26 @@
+package org.livesettings.test;
+
+import org.baseclass.BaseClass;
+import org.pomclass.LoginPomClass;
+import org.testng.annotations.BeforeMethod;
+
+public class HolidaysListTest extends BaseClass {
+	
+	@BeforeMethod 
+	public void bfrmthd()     
+	{
+		//launchBrowsergoogle();
+		//launchBrowseredgedriver();
+		launchBrowserfirefox();
+		maxBrowser();
+		loadUrl("https://contactpoint360.h2r.ai/app");
+		implictyWait();
+		LoginPomClass po = new LoginPomClass();
+		fill(po.getEmail(), "estelle123@yopmail.com");
+		fill(po.getPasswrd(), "Test@123");
+		buttonClick(po.getCheckbox());
+		buttonClick(po.getSubmit());
+		
+	}
+
+}
